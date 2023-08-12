@@ -2,26 +2,31 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>SimuladorJS</title>
-    <link rel="shortcut icon" href="img/JavaScript-logo (1).png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/JavaScript-logo (1).png" type="image/x-icon" />
 </head>
 
 <body>
     <footer>
-      <a href="index.html">  <h1>Simulador de prestamos js</h1> </a>
+        <a href="index.html">
+            <h1>Simulador de prestamos js</h1>
+        </a>
     </footer>
     <section class="SubT">
-        <h2>Simula ahora mismo tu prestamo, en 6,12 o 24 cuotas con sus distintos intereses.</h2>
-        <img src="img/flecha.png" alt="Flechaabajo" width="90px" height="80px">
+        <h2>
+            Simula ahora mismo tu prestamo, en 6,12 o 24 cuotas con sus distintos
+            intereses.
+        </h2>
+        <img src="img/flecha.png" alt="Flechaabajo" width="90px" height="80px" />
     </section>
     <section class="calculador">
         <label class="cant1" for="monto">Indique cantidad de dinero</label>
         <div class="input-group">
             <span class="input-group-icon">$</span>
-            <input type="text" class="input-group-field" id="monto" >
+            <input type="text" class="input-group-field" id="monto" />
         </div>
 
         <div>
@@ -31,22 +36,21 @@
                 <option value="6">6 meses</option>
                 <option value="12">12 meses</option>
                 <option value="24">24 meses</option>
+                <option value="36">36 meses</option>
             </select>
-            <br><br>
-            <button class="btn1" onclick="calcularPagoMensual()">Calcular</button>
+            <br /><br />
+            <button class="btn1" id="Calcular">Calcular</button>
         </div>
-        <br>
-
+        <br />
         <div class="resultados"><span id="tasa-interes"></span></div>
-        <div  class="resultados" id="pago-mensual-total"></div>
+        <div class="resultados" id="pago-mensual-total"></div>
         <div class="resultados" id="pago-total"></div>
-        
-       
     </section>
     <footer>
-     <p> 2023 SimuladorJS® Todos los derechos resevados. </p>
+        <p>2023 SimuladorJS® Todos los derechos resevados.</p>
     </footer>
     <script src="js/ejercicio.js"></script>
 </body>
+
 
 </html>
